@@ -26,15 +26,15 @@
 
 
 /* Placeholder for Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Jaro:opsz@6..72&display=swap');
 
 :root {
 
     /* VARIABLES */
 
     /* Typography */
-  --headingFont: 'Bitter', serif;
-  --bodyFont: 'Inter', sans-serif;
+  --headingFont: 'Jaro', sans-serif;
+  --bodyFont: 'Fuzzy Bubbles', sans-serif;
 
   --baseFontSize: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
 
@@ -278,12 +278,12 @@ li {
     grid-gap: 20px;
     gap: 20px;
     
-    /* by default use min 200px wide columns auto-fit into width */
-    grid-template-columns: minmax(200px, 1fr);
+    /* by default use min 200px wide columns auto-fit into width 
+    grid-template-columns: minmax(200px, 1fr);*/
   }
   
   /* grids to 3 columns above mobile sizes */
-  @media (min-width: 600px) {
+  @media (min-width: 200px) {
     .grid-container {
       grid-template-columns: repeat(3, 1fr);
       padding: 10px 0;
