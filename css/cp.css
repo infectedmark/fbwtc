@@ -132,3 +132,32 @@
       padding:1rem;
   
   }  
+  .text--0- {
+    width: 358px;
+    height: 178px;
+    font-family: Fuzzy Bubbles, "Regular";
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .iconfoods {
+    grid-column: 3 /3;
+  }
+
+  .boarderdecoration{
+    border: 10px #ffffff dashed;
+    margin: 50px
+  }
+  .h1:hover{
+    text-decoration: underline;
+  }
+  .end{
+    color:#ffffff;
+    font-size: 50px;
+    margin: 25px;
+  }
+  .textpangolin{
+    color:#ffffff;
+    font-size: 25px;
+  }

@@ -98,7 +98,7 @@
 /* Light theme (default) */
 :root {
   --bg: var(--gray-100);
-  --textColor: var(--black);
+  --textColor: var(--white);
 }
 
 /* Dark theme */
@@ -227,14 +227,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--space-3);
 }
 
-h1 { font-size: var(--xlText); }
-h2 { font-size: var(--lgText); }
+h1 { font-size: var(--xlText);}
+h2:hover { font-size: var(--lgText); text-decoration: underline}
 h3 { font-size: var(--mdText); }
 h4 { font-size: var(--baseText); }
 h5 { font-size: var(--smText); }
 
 p {
+  font-size: 25px;
   margin-top: 0; 
+  margin-left:10px;
+  margin-right:10px;
   margin-bottom:var(--space-3);
 }
 
@@ -273,7 +276,7 @@ li {
    .grid-container {
     position: relative;
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 10 auto;
     display: grid;
     grid-gap: 20px;
     gap: 20px;
@@ -287,6 +290,7 @@ li {
     .grid-container {
       grid-template-columns: repeat(3, 1fr);
       padding: 10px 0;
+      margin: 10px 0;
     }
     
     /* basic grids */
@@ -301,12 +305,17 @@ li {
     }
     .grid-container.col-3 {
       grid-template-columns: repeat(3, 1fr);
+      padding: 0 0;
+      margin: 0 10px;
     }
     .grid-container.col-2 {
       grid-template-columns: 1fr 1fr;
     }
     .grid-container.full {
       grid-template-columns: 1fr;
+      margin: 0 10px;
+      gap: 0 5px;
+      grid-gap: 10px 10px;
     }
   }
   
