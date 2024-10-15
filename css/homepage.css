@@ -122,11 +122,11 @@
       margin:0;
   }
   .arrow {
-    position: relative; /* Positioning arrow at the bottom */
-    left: 45%; /* Center horizontally */
+    position: absolute; /* Positioning arrow at the bottom */
+    left: 50%; /* Center horizontally */
     bottom: 10px; /* Space from bottom */
     transform: translateX(-50%); /* Center the arrow */
-    font-size: 160px; /* Adjust arrow size */
+    font-size: 150px; /* Adjust arrow size */
     color: #000; /* Arrow color */
     text-decoration: none; /* Remove underline from link */
 }
