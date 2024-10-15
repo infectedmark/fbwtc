@@ -25,9 +25,9 @@
 </head>
 
 <body>
-  <section class="grid-container col-3">
+  <a href="menu.html" class="grid-container col-3">
     <h2> FBWTC </h2>
-  </section>
+  </a>
 
   <section class="grid-container full">
     <h1 class="text-center"> Chinese Pangolin </h1> 
@@ -88,5 +88,26 @@
     <h3 class="end">There is less than 10,000 left of Chinese pangolin on this planet, please say no to wild animal product no matter how beautiful or exotic it is. Only by doing that, we can have an environment where species can live together.
     </h3>
   </div>
+
+  <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+  <script>
+    // Get the button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when scrolling down
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+ 
 </body>
 </html>
