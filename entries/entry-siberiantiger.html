@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chinese Pangolin</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/st.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+
+<body>
+  <a href="menu.html" class="grid-container col-3">
+    <h2> FBWTC </h2>
+  </a>
+
+  <section class="grid-container full">
+    <h1 class="text-center"> Siberian Tiger </h1> 
+    <figure> <img src="../images/tigerroar.gif" /> </img></figure>
+  </section>
+
+  <div class="icon">
+    <span class="icon-text">FACTS</span>
+  </div>
+
+  <section class="grid-container full">
+    <p> The Siberian tiger (Panthera tigris altaica), also known as the Amur tiger, is the largest wild cat in the world and primarily inhabits the forests of the Russian Far East, particularly in the Amur-Ussuri region of Siberia.</p>
+    <figure class="boarderdecoration"> <img src="../images/cutetiger.gif"/> </figure>
+  </section>
+
+  <div class="icon">
+    <span class="icon-text">FOODS</span>
+  </div>
+
+  <div class="grid-container full">
+    <p>They mainly eat large ungulates, such as deer (like red deer and sika deer) and wild boar. They may also hunt smaller animals like rabbits, hares, and even fish. Siberian tigers are solitary hunters with excellent night vision and can travel long distances to find food. To sustain their large body size, they need around 20-30 pounds of meat daily but can consume up to 90 pounds in a single meal. </p>
+  </div>
+
+  <div class="grid-container col-2">
+    <img src="../images/ant.png"> 
+    <img src="../images/termite.png"> 
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/larva.png">
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">CRISIS</span>
+  </div>
+
+  <div class="grid-container full">
+    <p>Pangolins are the most trafficked mammal in the world—with demand primarily in Asia and in growing amounts in Africa—for their meat and scales. There is also demand in the United States for pangolin products, particularly for their leather to be used in boots, bags, and belts.
+    </p>
+    <img src="../images/pboot.png">
+    <img src="../images/pskin.png">
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">Where to Find</span>
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/map.png">
+  </div>
+
+  <div>
+    <p>The pangolin is distributed in Fujian, Guangdong, Guangxi, Yunnan and Guizhou in southern China, and also in Myanmar and Nepal. The pangolin lives in various environments of forests, thickets or forests and thickets in mountainous areas, and various kinds of broad-leaved forests, mixed coniferous and broad-leaved forests, tree and bamboo thickets and grassy scrubs are the preferred inhabits of the pangolin.
+    </p>
+  </div>
+
+  <div>
+    <h3 class="end">Fewer than 600 individuals remain in the wild due to habitat loss, poaching, and human-wildlife conflict.
+    </h3>
+  </div>
+
+  <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+  <script>
+    // Get the button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when scrolling down
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+ 
+</body>
+</html>

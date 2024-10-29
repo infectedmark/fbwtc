@@ -1,9 +1,10 @@
 :root {
     /* Core colors */
-    --primary: hsl(10, 9%, 48%);
+    --primary: hsl(0, 0%, 100%);
     --secondary:hsl(171, 76%, 3%);
-    --tertiary: hsl(10, 9%, 48%);
-    --textColorlight: #ffffff;
+    --tertiary: hsl(0, 0%, 91%);
+    --textColorlight: #040404;
+    --textColor: #000000;
   }
   
 body {
@@ -134,23 +135,24 @@ h1 {
 
 
   .boarderdecoration{
-    border: 10px #ffffff dashed;
+    border: 10px #000000 dashed;
     margin: 50px
   }
 
   .end{
-    color:#ffffff;
+    color:#780000;
     font-size: 50px;
     margin: 25px;
   }
   .textpangolin{
-    color:#ffffff;
+    color:#000000;
     font-size: 25px;
   }
 
 h2{
    font-size:20px;
     text-align:left;
+    color:#e65400;
     cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
     padding: 10px; /* Add some padding */
     margin: 0; /* Remove default margin */
@@ -158,8 +160,8 @@ h2{
 }
 
 h2:hover {
-    text-color: black;
-    background-color: rgba(255, 255, 255, 0); /* Light background on hover */
+    text-color: rgb(229, 153, 0);
+    background-color: rgba(224, 87, 13, 0); /* Light background on hover */
 }
 .scroll-to-top {
     position: fixed;
@@ -178,4 +180,28 @@ h2:hover {
 }
 
 
-}
+  
+  /* Icon Style */
+  .icon {
+    width: 150px;
+    height: 50px;
+    background-color: #ce6909; /* Background color of the icon */
+    border-radius: 15px; /* Rounding of the borders */
+    border-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+    margin-left: 10px;
+  }
+  
+  /* Text Style */
+  .icon-text {
+    padding: 5px;
+    font-family: 'Jaro', sans-serif; /* Prevents text selection */
+    font-size: 100%;
+  }
