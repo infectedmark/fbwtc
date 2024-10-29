@@ -1,0 +1,66 @@
+
+复制代码
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll-Triggered Overlay Image</title>
+<style>
+  /* Ensure the page has some height to scroll */
+  body {
+    height: 200vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Container for the overlay image */
+  .overlay-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/ant.png') no-repeat center center;
+    background-size: cover;
+    z-index: 999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Makes sure overlay doesn’t interfere with page scrolling */
+  }
+
+  /* Content to scroll behind the overlay */
+  .content {
+    padding: 2rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="overlay-image" id="overlay"></div>
+
+<div class="content">
+  <h1>Scroll Down to See the Effect</h1>
+  <p>Your page content goes here. This could be anything: text, images, articles, etc. As you scroll, the overlay image will fade or move downwards.</p>
+</div>
+
+<script>
+  // Get the overlay element
+  const overlay = document.getElementById('overlay');
+
+  window.addEventListener('scroll', () => {
+    // Calculate the scroll position as a percentage of the viewport height
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    
+    // Use scroll position to control opacity and movement
+    const opacity = 1 - Math.min(scrollY / windowHeight, 1);
+    const translateY = scrollY * 0.5;  // Adjust the multiplier for desired speed
+
+    // Apply styles to overlay
+    overlay.style.opacity = opacity;
+    overlay.style.transform = `translateY(${translateY}px)`;
+  });
+</script>
+
+</body>
+</html>
