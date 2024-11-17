@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chinese Alligator</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/chinesealligator.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+
+<body>
+  <a href="menu.html" class="grid-container col-3">
+    <h2> FBWTC </h2>
+  </a>
+
+  <section class="grid-container full">
+    <h1 class="text-center"><em class="headingdeco">Chinese Alligator</em> </h1> 
+    <figure> <img class="rounded-corner" src="../images/alligatormove.webp" /> </img></figure>
+  </section>
+
+  <div class="icon">
+    <span class="icon-text">FACTS</span>
+  </div>
+
+  <section>
+    <p> The Chinese alligator (Alligator sinensis), also known as the Yangtze alligator, is one of only two existing species of alligators, the other being the American alligator. It is much smaller than its American counterpart, reaching an average length of about 4.5–5 feet and weighing 50–85 pounds. These reptiles are endemic to eastern China, particularly in the lower Yangtze River basin, where they inhabit slow-moving freshwater areas like ponds, marshes, and lakes.</p>
+  </section>
+
+  <div class="grid-container full">
+     <img class="rounded-corner" src="../images/chinesealligator.jpeg"/> </figure>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">FOODS</span>
+  </div>
+
+  <div>
+    <p>Chinese alligators are opportunistic feeders, preying on a variety of small animals, including fish, frogs, and invertebrates. They may also consume snails and crustaceans, using their blunt teeth to crush hard shells. As ambush predators, they rely on stealth and their powerful jaws to capture prey.</p>
+  </div>
+
+  <div class="grid-container col-2">
+    <img src="../images/alligatoprey.jpeg" class="rounded-corner"> 
+    <img src="../images/snail.jpeg" class="rounded-corner"> 
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/cafloat.jpeg" class="rounded-corner">
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">CRISIS</span>
+  </div>
+
+  <div>
+    <p>Habitat destruction due to agricultural expansion, wetland drainage, and urban development has critically endangered the Chinese alligator. Pollution and damming in the Yangtze River basin have further degraded their habitat. Historically hunted for their skin and meat, conservation efforts have reduced poaching, but their wild population remains alarmingly low. </p>
+  </div>
+  
+  <div class="grid-container full">
+    <div class="censored">
+      <img src="../images/crocodile-torture.jpg" class="rounded-corner">
+      <div class="censor-overlay">Click to reveal the truth</div>
+    </div>
+    <div class="censored">
+      <img src="../images/ap.avif" class="rounded-corner">
+      <div class="censor-overlay">Click to reveal the truth</div>
+    </div>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">Where to Find</span>
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/map.png">
+  </div>
+
+  <div>
+    <p>
+        In China, Chinese alligators are found in a few small, fragmented areas in the provinces of Anhui and Zhejiang, particularly around the Anhui National Nature Reserve for Chinese Alligators. This protected reserve includes ponds and wetlands that mimic their natural habitat, essential for their survival and breeding.
+    </p>
+  </div>
+
+  <div>
+    <h3 class="end">Fewer than 150 wild Chinese alligators remain in the wild. Conservation efforts are underway to protect their habitat and increase their population.
+    </h3>
+  </div>
+
+  <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+  <script>
+    // Get the button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when scrolling down
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    
+  </script>
+    <script>
+    document.querySelectorAll('.censored').forEach(item => {
+  item.addEventListener('click', function () {
+    this.classList.add('clicked');});
+});
+
+        
+      </script>
+  
+ 
+</body>
+</html>

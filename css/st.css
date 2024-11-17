@@ -193,10 +193,11 @@ h2:hover {
     justify-content: center;
     color: white; /* Text color */
     font-family: Arial, sans-serif;
-    font-size: 25px;
+    font-size: 100%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
-    margin-left: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
   }
   
   /* Text Style */
@@ -235,4 +236,12 @@ h2:hover {
    color:#e65400;
 
 
+}
+
+p{
+  margin: 10%;
+}
+
+figure{
+  margin:10%;
 }

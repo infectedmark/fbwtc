@@ -306,14 +306,17 @@ li {
     .grid-container.col-3 {
       grid-template-columns: repeat(3, 1fr);
       padding: 0 0;
-      margin: 0 10px;
+      margin: 0 10%;
     }
     .grid-container.col-2 {
       grid-template-columns: 1fr 1fr;
+      margin: 0 10%;
+      padding:0 0;
+      gap: 5px;
     }
     .grid-container.full {
       grid-template-columns: 1fr;
-      margin: 0 10px;
+      margin: 0 10%;
       gap: 0 5px;
       grid-gap: 10px 10px;
     }
