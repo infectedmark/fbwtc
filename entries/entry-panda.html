@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Panda</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/panda.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+
+<body>
+
+        <!-- Trigger button to open the menu -->
+        <div id="menuToggle">
+          <h2>FBWTC</h2>
+        </div>
+      
+        <!-- Sidebar Menu -->
+        <nav id="sideMenu">
+          <ul>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="entry-siberiantiger.html">Siberian Tiger</a></li>
+            <li><a href="entry-panda.html">Panda</a></li>
+            <li><a href="entry-chinesealligator.html">Chinese Alligator</a></li>
+            <li><a href="entry-crestedibis.html">Crested Ibis</a></li>
+            <li><a href="entry-whitecrane.html">White Crane</a></li>
+            <li><a href="entry-pangolin.html">Chinese Pangolin</a></li>
+            <li><a href="entry-tibetanantelope.html">Tibetan Antelope</a></li>
+            <li><a href="entry-slowloris.html">Slow Loris</a></li>
+            <li><a href="entry-goldenmonkey.html">Golden Monkey</a></li>
+            <li><a href="entry-snowleopard.html">Snow Leopard</a></li>
+          </ul>
+        </nav>
+
+  <section class="grid-container full">
+    <h1 class="text-center"><em class="headingdeco">Panda</em> </h1> 
+    <figure> <img class="rounded-corner" src="../images/pandacover.gif" /> </img></figure>
+  </section>
+
+  <div class="icon">
+    <span class="icon-text">FACTS</span>
+  </div>
+
+  <section>
+    <p> 
+
+        What’s black, white, and loves bamboo? Pandas! These iconic, solitary bears are easily recognized by their bold black-and-white markings and playful demeanor. Spending much of their day eating, pandas use their powerful jaws and “thumb-like” wrist bones to grasp and strip bamboo stalks. Though they appear docile, pandas can climb trees and swim with ease, helping them escape predators or navigate their forested habitats. Their gentle nature and charming behavior make them a global symbol for conservation.  </section>
+
+  <div class="grid-container full">
+     <img class="rounded-corner" src="../images/pandainteraction.gif"/> </figure>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">FOODS</span>
+  </div>
+
+  <div>
+    <p>
+        Giant pandas feed primarily on bamboo, consuming up to 26–84 pounds daily to meet their energy needs. Occasionally, they may eat small animals or eggs. Their unique thumb-like wrist bone helps them grasp and strip bamboo stalks efficiently. Pandas spend 10–16 hours a day feeding due to bamboo's low nutritional value.    </p>
+  </div>
+
+  <div class="grid-container col-2">
+    <img src="../images/pandaeating.jpeg" class="rounded-corner"> 
+    <img src="../images/pandaeating2.gif" class="rounded-corner"> 
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/pandaeating3.png" class="rounded-corner">
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">CRISIS</span>
+  </div>
+
+  <div>
+    <p>
+        Habitat destruction from deforestation and agricultural expansion has significantly reduced the bamboo forests pandas depend on, confining them to isolated mountain ranges. Although poaching has decreased due to conservation efforts, habitat fragmentation remains a critical issue. Climate change also threatens bamboo availability, further endangering the species.
+    </p>
+  </div>
+  
+  <div class="grid-container full">
+    <div class="censored">
+      <img src="../images/pandaloss.webp" class="rounded-corner">
+      <div class="censor-overlay">Click to reveal the truth</div>
+    </div>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">Where to Find</span>
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/map.png">
+  </div>
+
+  <div>
+    <p>
+        In China, giant pandas are found in the bamboo-rich forests of Sichuan, Shaanxi, and Gansu provinces. Protected areas such as the Sichuan Giant Panda Sanctuaries and nature reserves like Wolong and Qinling are critical habitats for the wild panda population and play a key role in ongoing conservation efforts.
+    </p>
+  </div>
+
+  <div>
+    <h3 class="end">
+        As few as 1,864 giant pandas live in their native habitat, while another 600 pandas live in zoos and breeding centers around the world.
+    </h3>
+  </div>
+
+  <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+ 
+  <script>
+    // Get the button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when scrolling down
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    
+  </script>
+
+    <script>
+    document.querySelectorAll('.censored').forEach(item => {
+  item.addEventListener('click', function () {
+    this.classList.add('clicked');});
+});
+     </script>
+
+  <script>
+  // Get elements
+const menuToggle = document.getElementById("menuToggle");
+const sideMenu = document.getElementById("sideMenu");
+
+// Function to toggle the menu
+menuToggle.addEventListener("click", function (event) {
+  sideMenu.style.left = sideMenu.style.left === "0px" ? "-250px" : "0px";
+  event.stopPropagation(); // Prevent click event from bubbling to the document
+});
+
+// Hide the menu when clicking anywhere outside
+document.addEventListener("click", function () {
+  sideMenu.style.left = "-250px"; // Hide the menu
+});
+
+// Prevent hiding the menu when clicking inside it
+sideMenu.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+
+     </script>
+  
+ 
+</body>
+</html>

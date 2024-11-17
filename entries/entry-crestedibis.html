@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Crested Ibis</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/crestedabis.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+
+<body>
+
+        <!-- Trigger button to open the menu -->
+        <div id="menuToggle">
+          <h2>FBWTC</h2>
+        </div>
+      
+        <!-- Sidebar Menu -->
+        <nav id="sideMenu">
+          <ul>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="entry-siberiantiger.html">Siberian Tiger</a></li>
+            <li><a href="entry-panda.html">Panda</a></li>
+            <li><a href="entry-chinesealligator.html">Chinese Alligator</a></li>
+            <li><a href="entry-crestedibis.html">Crested Ibis</a></li>
+            <li><a href="entry-whitecrane.html">White Crane</a></li>
+            <li><a href="entry-pangolin.html">Chinese Pangolin</a></li>
+            <li><a href="entry-tibetanantelope.html">Tibetan Antelope</a></li>
+            <li><a href="entry-slowloris.html">Slow Loris</a></li>
+            <li><a href="entry-goldenmonkey.html">Golden Monkey</a></li>
+            <li><a href="entry-snowleopard.html">Snow Leopard</a></li>
+          </ul>
+        </nav>
+
+  <section class="grid-container full">
+    <h1 class="text-center"><em class="headingdeco">Crested Ibis</em> </h1> 
+    <figure> <img class="rounded-corner" src="../images/crestedibisbeg.jpeg" /> </img></figure>
+  </section>
+
+  <div class="icon">
+    <span class="icon-text">FACTS</span>
+  </div>
+
+  <section>
+    <p> 
+     What's elegant, white, and crowned with a feathery crest? The crested ibis! These striking birds, once thought to be extinct in the wild, are easily recognized by their long, curved beaks, bright red faces, and wispy crests. Known for their graceful movements, they are often seen wading in shallow waters, searching for food. Crested ibises are social creatures, typically found in small flocks.
+    </p>
+    </section>
+
+  <div class="grid-container full">
+     <img class="rounded-corner" src="../images/crestedibiscover.jpg"/> </figure>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">FOODS</span>
+  </div>
+
+<div>
+    <p>
+        Crested ibises are omnivorous, feeding primarily on small aquatic animals such as frogs, fish, and insects. They also eat plant material like seeds and small grains. Using their long, curved beaks, they probe into mud and shallow water to catch prey, often foraging in rice paddies and wetlands.
+    </p>
+</div>
+
+
+
+  <div class="grid-container full">
+    <img src="../images/crestedibiseating.webp" class="rounded-corner">
+  </div>
+  <div class="grid-container full">
+    <img src="../images/crestedibiseating2.jpg" class="rounded-corner">
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">CRISIS</span>
+  </div>
+
+  <div>
+    <p>
+        Once widespread across East Asia, crested ibises faced severe population declines due to habitat destruction, pesticide use, and hunting. By the late 20th century, they were nearly extinct, with only a small population discovered in China’s Shanxi province. Conservation programs have since helped their numbers recover, but habitat loss and limited genetic diversity remain concerns.  
+    </p>
+  </div>
+  
+  <div class="grid-container full">
+    <div class="censored">
+      <img src="../images/drainedwetland.png" class="rounded-corner">
+      <div class="censor-overlay">Click to reveal the truth</div>
+    </div>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">Where to Find</span>
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/map.png">
+  </div>
+
+  <div>
+    <p>
+        In China, crested ibises are primarily found in the wetlands and rice paddies of Shanxi province, particularly in the Qinling Mountains region. Conservation reserves, such as the Yangxian Crested Ibis National Nature Reserve, play a crucial role in protecting their habitats and supporting their gradual return to the wild.
+    </p>
+  </div>
+
+  <div>
+    <h3 class="end">
+        Around 10,000 population with 6,600 wild individuals living globalwide nowadays, thanks to conservation efforts, this beautiful bird is slowly recovering from the brink of extinction.
+    </h3>
+  </div>
+
+  <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+ 
+  <script>
+    // Get the button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when scrolling down
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    
+  </script>
+
+    <script>
+    document.querySelectorAll('.censored').forEach(item => {
+  item.addEventListener('click', function () {
+    this.classList.add('clicked');});
+});
+     </script>
+
+  <script>
+  // Get elements
+const menuToggle = document.getElementById("menuToggle");
+const sideMenu = document.getElementById("sideMenu");
+
+// Function to toggle the menu
+menuToggle.addEventListener("click", function (event) {
+  sideMenu.style.left = sideMenu.style.left === "0px" ? "-250px" : "0px";
+  event.stopPropagation(); // Prevent click event from bubbling to the document
+});
+
+// Hide the menu when clicking anywhere outside
+document.addEventListener("click", function () {
+  sideMenu.style.left = "-250px"; // Hide the menu
+});
+
+// Prevent hiding the menu when clicking inside it
+sideMenu.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+
+     </script>
+  
+ 
+</body>
+</html>

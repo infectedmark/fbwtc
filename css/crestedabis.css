@@ -1,0 +1,336 @@
+:root {
+    /* Core colors */
+    --primary: hsl(0, 0%, 100%);
+    --secondary:hsl(8, 94%, 41%);
+    --tertiary: #e9997f;
+    --textColorlight: #ea7676;
+    --textColor: #000000;
+    --background: #f4f2ee;
+  }
+  
+body {
+      background: var(--background);
+  }
+.mainframe {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: min-content;    
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+    }
+  
+section {
+      padding:0;
+      margin:0;
+  }
+  
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+    list-style: circle inside; }
+    ol {
+      list-style: decimal inside; }
+    ol, ul {
+      padding-left: 0;
+      margin-top: 0; }
+    ul ul, ul ol, ol ol, ol ul {
+        font-size: var(--baseText);
+        margin: 1rem 0 1rem 3rem;
+      }
+    li {
+      margin-bottom: 0.5rem; 
+      color: var(--textColorlight);
+      font-family: jaro;
+}
+  
+.button-set {
+      list-style-type: none;
+      grid-column: 8 / 11;
+      grid-row: 1 / 3;
+      padding:1rem;
+  }
+  
+.custom-button {
+      background-color: #e6cced;
+      color: #EA522F;
+      border-radius: 24px;
+      padding: 8px 2rem;
+      border: none;
+      cursor: pointer;
+  }
+  
+.primary-block {
+      display: grid;
+      grid-column: 1 / 5;
+      grid-row: 1 / 1;
+      background: var(--primary);
+      grid-template-columns: subgrid;
+      grid-template-rows: subgrid;
+  }
+  
+.secondary-block {
+      display: grid;
+      grid-column: 2/ 5;
+      grid-row: 2/ 4;
+      background: var(--secondary);
+      grid-template-columns: subgrid;
+      grid-template-rows: subgrid;
+  }
+
+.tertiary-block {
+      display: grid;
+      grid-column: 1 / 13;
+      grid-row: 4 / 5;
+      background: var(--tertiary);
+      grid-template-columns: subgrid;
+      grid-template-rows: subgrid;
+  }
+  
+.nav-menu {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 30px;
+      padding:1rem;
+  
+  }
+  
+.title-block {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      padding:1rem;
+      color: var(--textColorlight);
+  }
+  
+.recipe-description {
+      grid-column: 1 / 3;
+      grid-row: 1 / 4;
+      color: var(--textColorlight);
+      padding:1rem;
+  }
+.recipe-region {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      color: var(--textColorlight);
+      grid-column: 5 / 36;
+      grid-row: 1 / 4;
+      padding:1rem;
+      font-size: var(--mdText);
+      transform: rotate(-180deg);
+  }
+  
+h1 {
+      padding:0;
+      margin:0;
+  }
+  
+ 
+  .text--0- {
+    width: 358px;
+    height: 178px;
+    font-family: Fuzzy Bubbles, "Regular";
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+
+  .boarderdecoration{
+    border: 10px #000000 dashed;
+    margin: 50px
+  }
+
+  .end{
+    color:var(--textColorlight);
+    font-size: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+h2{
+   font-size:20px;
+    text-align:left;
+    color:var(--secondary);
+    cursor:pointer; /* Change cursor to pointer to indicate it's clickable */
+    padding: 10px; /* Add some padding */
+    margin: 0; /* Remove default margin */
+    transition: text-color 0.5s; /* Smooth transition for hover effect */
+}
+
+h2:hover {
+    text-color: #3e4c22;
+    background-color: rgba(224, 87, 13, 0); /* Light background on hover */
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;  /* Adjusts the position from the bottom */
+    right: 20px;   /* Adjusts the position from the right */
+    background-color: var(--tertiary); /* Button background color */
+    color: rgb(255, 255, 255);  /* Button text color */
+    border: none;  /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 15px; /* Padding around text */
+    font-family: 'Jaro', sans-serif;
+    font-size: 50px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Make sure it is above other content */
+}
+
+
+  
+  /* Icon Style */
+  .icon {
+    width: 150px;
+    height: 50px;
+    background-color:var(--tertiary) ; /* Background color of the icon */
+    border-radius: 15px; /* Rounding of the borders */
+    border-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+  }
+  
+  /* Text Style */
+  .icon-text {
+    padding: 5px;
+    font-family: 'Jaro', sans-serif; /* Prevents text selection */
+    font-size: 100%;
+  }
+
+  .imagefood {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the image */
+    border-radius: 15px;
+    border-color: #ffffff;
+    overflow: hidden;
+    width: 100%; /* Make the container responsive */
+    max-width: 100%; /* Prevent overflow beyond container */
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.imagefood img {
+    width: auto;
+    height: auto;
+    max-width: 50%; /* Prevents the image from getting larger than its container */
+    flex-shrink: 1; /* Allows the image to shrink as the container shrinks */
+    border-radius: 15px;
+}
+
+.rounded-corner{
+    border-radius: 50px; /* Adjust the value to increase or decrease the roundness */
+    overflow: hidden;
+}
+.headingdeco{
+   color:var(--secondary);
+   border-color:#ffffff;
+
+
+}
+
+p{
+margin: 10%;
+margin-top: 1%;
+margin-bottom: 1%;
+  color:var(--textColor);
+}
+
+/* Censored effect */
+.censored {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .censored img {
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+  }
+  
+  .censored .censor-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    pointer-events: none; /* Makes the overlay unclickable */
+    transition: opacity 0.3s ease;
+  }
+  
+  .censored.clicked img {
+    filter: none;
+  }
+  
+  .censored.clicked .censor-overlay {
+    opacity: 0;
+  }
+  
+ /* Style for the menu toggle button */
+ #menuToggle {
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #33333300;
+  color: #fff;
+  width: 100px;
+  transition: background-color 0.3s ease;
+}
+#menuToggle:hover {
+  background-color: #55555500;
+}
+
+/* Sidebar Menu */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+  overflow: auto;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 20px;
+}
+
+/* Links in the menu */
+#sideMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+#sideMenu ul li {
+  padding: 15px;
+  text-align: left;
+}
+#sideMenu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+#sideMenu ul li a:hover {
+  background-color: #444;
+}

@@ -3,7 +3,7 @@
     --primary: hsl(0, 0%, 100%);
     --secondary:hsl(171, 76%, 3%);
     --tertiary: hsl(0, 0%, 91%);
-    --textColorlight: #040404;
+    --textColorlight: #EA522F;
     --textColor: #000000;
   }
   
@@ -39,7 +39,9 @@ ul {
       }
     li {
       margin-bottom: 0.5rem; 
-      color: var(--textColorlight);
+      
+      font-family: jaro;
+  
 }
   
 .button-set {
@@ -142,7 +144,7 @@ h1 {
   .end{
     color:#b20000;
     font-size: 50px;
-    margin: 25px;
+    margin: 10%;
   }
   .textpangolin{
     color:#000000;
@@ -151,6 +153,7 @@ h1 {
 
 h2{
    font-size:20px;
+   font-family: jaro;
     text-align:left;
     color:#e65400;
     cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
@@ -242,6 +245,52 @@ p{
   margin: 10%;
 }
 
-figure{
-  margin:10%;
+ /* Style for the menu toggle button */
+ #menuToggle {
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #33333300;
+  color: #fff;
+  width: 100px;
+  transition: background-color 0.3s ease;
+}
+#menuToggle:hover {
+  background-color: #55555500;
+}
+
+/* Sidebar Menu */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  color: #fff;
+  overflow: auto;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 20px;
+}
+
+/* Links in the menu */
+#sideMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+#sideMenu ul li {
+  padding: 15px;
+  text-align: left;
+}
+#sideMenu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+#sideMenu ul li a:hover {
+  background-color: #444;
 }

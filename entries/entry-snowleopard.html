@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Snow Leopard</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/snowleopard.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+
+<body>
+
+        <!-- Trigger button to open the menu -->
+        <div id="menuToggle">
+          <h2>FBWTC</h2>
+        </div>
+      
+        <!-- Sidebar Menu -->
+        <nav id="sideMenu">
+          <ul>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="entry-siberiantiger.html">Siberian Tiger</a></li>
+            <li><a href="entry-panda.html">Panda</a></li>
+            <li><a href="entry-chinesealligator.html">Chinese Alligator</a></li>
+            <li><a href="entry-crestedibis.html">Crested Ibis</a></li>
+            <li><a href="entry-whitecrane.html">White Crane</a></li>
+            <li><a href="entry-pangolin.html">Chinese Pangolin</a></li>
+            <li><a href="entry-tibetanantelope.html">Tibetan Antelope</a></li>
+            <li><a href="entry-slowloris.html">Slow Loris</a></li>
+            <li><a href="entry-goldenmonkey.html">Golden Monkey</a></li>
+            <li><a href="entry-snowleopard.html">Snow Leopard</a></li>
+          </ul>
+        </nav>
+
+  <section class="grid-container full">
+    <h1 class="text-center"><em class="headingdeco">Snow Leopard</em> </h1> 
+    <figure> <img class="rounded-corner" src="../images/snowleopardgif.gif" /> </img></figure>
+  </section>
+
+  <div class="icon">
+    <span class="icon-text">FACTS</span>
+  </div>
+
+  <section>
+    <p> 
+        The snow leopard (*Panthera uncia*), often called the “ghost of the mountains,” is a medium-sized big cat adapted to the cold, rugged terrain of Central and South Asia. It primarily inhabits mountainous regions at elevations of 9,800–17,000 feet, including the Himalayas, the Tibetan Plateau, and the Altai Mountains. Known for their thick, spotted fur and long tails, snow leopards are perfectly suited for camouflage and balance in rocky environments.
+    </p>
+  </section>
+
+  <div class="grid-container full">
+     <img class="rounded-corner" src="../images/snowking.jpeg"/> </figure>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">FOODS</span>
+  </div>
+
+  <div>
+    <p>Snow leopards are carnivores, preying mainly on mountain ungulates such as blue sheep (bharal), ibex, and argali. They also hunt smaller mammals like marmots, hares, and birds. As solitary and stealthy hunters, they can take down prey up to three times their body weight. Their diet varies depending on prey availability and season.</p>
+  </div>
+
+  <div class="grid-container col-2">
+    <img src="../images/ibex.jpeg" class="rounded-corner"> 
+    <img src="../images/marmot.jpeg" class="rounded-corner"> 
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/sleating.jpg" class="rounded-corner">
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">CRISIS</span>
+  </div>
+
+  <div>
+    <p>Habitat loss due to livestock grazing, human settlement, and infrastructure development threatens the snow leopard’s survival. They are also at risk from retaliatory killings by herders protecting their livestock and poaching for their pelts and bones, which are used in traditional medicine. Climate change further exacerbates habitat degradation by altering prey distribution and reducing snow cover.</p>
+  </div>
+  
+  <div class="grid-container full">
+    <div class="censored">
+      <img src="../images/slskin.webp" class="rounded-corner">
+      <div class="censor-overlay">Click to reveal the truth</div>
+    </div>
+  </div>
+
+  <div class="icon">
+    <span class="icon-text">Where to Find</span>
+  </div>
+
+  <div class="grid-container full">
+    <img src="../images/map.png">
+  </div>
+
+  <div>
+    <p>
+        In China, snow leopards are found in the remote, high-altitude regions of the Tibetan Plateau and the Tianshan and Qilian Mountains, spanning the provinces of Xinjiang, Qinghai, Gansu, and Tibet. China hosts the largest population of snow leopards globally, making its conservation efforts critical for the species' survival.
+    </p>
+  </div>
+
+  <div>
+    <h3 class="end">There are an estimated 4,080-6,590 snow leopards in the wild, the natural barren makes it difficult to track them. The snow leopard is listed as Vulnerable on the IUCN Red.
+    </h3>
+  </div>
+
+  <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+ 
+  <script>
+    // Get the button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when scrolling down
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top when the button is clicked
+    scrollToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    
+  </script>
+
+    <script>
+    document.querySelectorAll('.censored').forEach(item => {
+  item.addEventListener('click', function () {
+    this.classList.add('clicked');});
+});
+     </script>
+
+  <script>
+  // Get elements
+const menuToggle = document.getElementById("menuToggle");
+const sideMenu = document.getElementById("sideMenu");
+
+// Function to toggle the menu
+menuToggle.addEventListener("click", function (event) {
+  sideMenu.style.left = sideMenu.style.left === "0px" ? "-250px" : "0px";
+  event.stopPropagation(); // Prevent click event from bubbling to the document
+});
+
+// Hide the menu when clicking anywhere outside
+document.addEventListener("click", function () {
+  sideMenu.style.left = "-250px"; // Hide the menu
+});
+
+// Prevent hiding the menu when clicking inside it
+sideMenu.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+
+     </script>
+  
+ 
+</body>
+</html>
