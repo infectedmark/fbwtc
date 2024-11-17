@@ -285,12 +285,12 @@ p{
   text-align: left;
 }
 #sideMenu ul li a {
-  color: #fff;
+  color: var(--primary);
   text-decoration: none;
   font-size: 18px;
   display: block;
   transition: background-color 0.3s ease;
 }
 #sideMenu ul li a:hover {
-  background-color: #444;
+  background-color: #EA522F;
 }

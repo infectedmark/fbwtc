@@ -258,7 +258,7 @@ margin-bottom: 1%;
     left: -250px; /* Hidden by default */
     width: 250px;
     height: 100%;
-    background-color: #222;
+    background-color: #afafaf;
     color: #fff;
     overflow: auto;
     transition: left 0.3s ease;
@@ -276,13 +276,13 @@ margin-bottom: 1%;
     text-align: left;
   }
   #sideMenu ul li a {
-    color: #fff;
+    color: #022c46;
     text-decoration: none;
     font-size: 18px;
     display: block;
     transition: background-color 0.3s ease;
   }
   #sideMenu ul li a:hover {
-    background-color: #444;
+    background-color: #ffffff;
   }
   
