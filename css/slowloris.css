@@ -1,9 +1,9 @@
 :root {
     /* Core colors */
     --primary: hsl(0, 0%, 100%);
-    --secondary:hsl(8, 49%, 37%);
+    --secondary:hsl(8, 15%, 37%);
     --tertiary: #2c2625;
-    --textColorlight: hsl(8, 49%, 37%);
+    --textColorlight: hsl(8, 40%, 26%);
     --textColor: #000000;
     --background: #a0b1b54b;
   }
