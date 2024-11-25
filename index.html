@@ -1,46 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/brandnewhp.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Jaro:opsz@6..72&display=swap');
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>FBWTC</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+        :root {
+            font-size: 38px;
+            --headingfont: 'Fuzzy Bubbles', sans-serif;
+        }
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: "jaro";
+            position: relative;
+            overflow: hidden;
+        }
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/homepage.css">
+        .container {
+            width: 400px;
+        }
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.ico">
+        h1 {
+            margin: 0;
+            letter-spacing: 5px;
+            line-height: 85%;
+        }
+
+        span {
+            position: relative;
+            top: .8rem;
+            display: inline-block;
+            overflow: hidden;
+            animation: 1.3s swift-up ease-in-out forwards;
+        }
+
+        i {
+            position: relative;
+            top: 2.2rem;
+            font-style: normal;
+            animation: 1.3s swift-up ease-in-out forwards;
+        }
+
+        @keyframes swift-up {
+            to {
+                top: 0;
+            }
+        }
+
+        span:nth-of-type(1) i { animation-delay: 0; }
+        span:nth-of-type(2) i { animation-delay: .2s; }
+        span:nth-of-type(3) i { animation-delay: .5s; }
+        span:nth-of-type(4) i { animation-delay: .3s; }
+        span:nth-of-type(5) i { animation-delay: .1s; }
+        span:nth-of-type(6) i { animation-delay: .15s; }
+        span:nth-of-type(7) i { animation-delay: 0; }
+        span:nth-of-type(8) i { animation-delay: .7s; }
+        span:nth-of-type(9) i { animation-delay: .4s; }
+
+        span:nth-of-type(1) { animation-delay: 0; }
+        span:nth-of-type(2) { animation-delay: .2s; }
+        span:nth-of-type(3) { animation-delay: .5s; }
+        span:nth-of-type(4) { animation-delay: .3s; }
+        span:nth-of-type(5) { animation-delay: .1s; }
+        span:nth-of-type(6) { animation-delay: .15s; }
+        span:nth-of-type(7) { animation-delay: 0; }
+        span:nth-of-type(8) { animation-delay: .7s; }
+        span:nth-of-type(9) { animation-delay: .4s; }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 1s ease-in-out;
+            z-index: 10;
+        }
+
+        .circle.expand {
+            transform: translate(-50%, -50%) scale(100);
+        }
+    </style>
 </head>
 
 <body>
+    <a href="#" id="menuLink">
+        <div class="container">
+            <h1>
+                <span><i>Fantastic</i></span>
+                <span><i>Beasts</i></span>
+                <span><i>and</i></span>
+                <span><i>Where</i></span>
+                <span><i>to</i></span>
+                <span><i>Find</i></span>
+                <span><i>Them</i></span>
+                <span><i>in</i></span>
+                <span><i>China</i></span>
+            </h1>
+        </div>
+    </a>
+    <div class="circle" id="circleAnimation"></div>
 
- <section>
-     <h2>FBWTC</h2>
+    <script>
+        const menuLink = document.getElementById('menuLink');
+        const circleAnimation = document.getElementById('circleAnimation');
 
+        menuLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            circleAnimation.classList.add('expand');
 
-    <div class="grid-container full">
-        <img src="images/title.png"/>
-    </div>
-
-    <div class="grid-container full">
-        <img src="images/maphome.png"/>
-    </div>       
- </section>
- <a href="entries/menu.html" class="arrow">⬇</a>
- 
-
-    
+            setTimeout(() => {
+                window.location.href = 'entries/menu.html';
+            }, 1000); // Wait for the animation to complete before redirecting
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Jaro:opsz@6..72&display=swap');
+:root {
+    font-size: 38px;
+    --heaidngfont:'Fuzzy Bubbles', sans-serif;
+  
+    
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "jaro";
+   
+
+}
+
+span{
+    position: relative;
+    top: .8rem;
+    display: inline-block;
+    overflow: hidden;
+    animation:1.3s swift-up ease-in-out forwards;
+}
+.container {
+    width: 400px;
+}
+
+h1{
+    margin:0;
+    letter-spacing:5px;
+    line-height:85%;
+}
+
+i {
+    position:relative;
+    top: 2.2rem;
+    font-style:normal;
+    animation:1.3s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+    to{
+        top:0;
+    }   
+}
+
+span:nth-of-type(1) i {
+    animation-delay:0;
+}
+
+span:nth-of-type(2) i {
+    animation-delay:.2s;
+}
+
+span:nth-of-type(3) i {
+    animation-delay:.5s;
+}
+
+span:nth-of-type(4) i {
+    animation-delay:.3s;
+}
+
+span:nth-of-type(5) i {
+    animation-delay:.1s;
+}
+
+span:nth-of-type(6) i {
+    animation-delay:.15s;
+}
+
+span:nth-of-type(7) i {
+    animation-delay:0;
+}
+
+span:nth-of-type(8) i {
+    animation-delay:.7s;
+}
+
+span:nth-of-type(9) i {
+    animation-delay:.4s;
+}
+-------------------------------------------
+span:nth-of-type(1){
+    animation-delay:0;
+}
+
+span:nth-of-type(2){
+    animation-delay:.2s;
+}
+
+span:nth-of-type(3){
+    animation-delay:.5s;
+}
+
+span:nth-of-type(4){
+    animation-delay:.3s;
+}
+
+span:nth-of-type(5){
+    animation-delay:.1s;
+}
+
+span:nth-of-type(6){
+    animation-delay:.15s;
+}
+
+span:nth-of-type(7){
+    animation-delay:0;
+}
+
+span:nth-of-type(8){
+    animation-delay:.7s;
+}
+
+span:nth-of-type(9){
+    animation-delay:.4s;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+    
+}
